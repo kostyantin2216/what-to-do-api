@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "outDir": "./dist",
+        "pretty": true,
+        "sourceMap": true,
+        "removeComments": true, 
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "target": "es5",
+        "lib": [
+            "es2015"
+        ],
+        "types": [
+            "express",
+            "lodash",
+            "moment",
+            "node"
+        ],
+        "typeRoots": [
+            "./node_modules/@types",
+            "./src/@types"
+        ],
+        "paths": {
+            "@app/*": ["./src/app/*"],
+            "@data/*": ["./src/data/*"],
+            "@utils/*": ["./src/utils/*"]
+        }
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+    
+}

@@ -1,0 +1,30 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        "curly": [true, "ignore-same-line"],
+        "interface-name": false,
+        "max-line-length": false,
+        "no-bitwise": false,
+        "no-console": false,
+        "no-shadowed-variable": false,
+        "no-unused-expression": true,
+        "no-unused-variable": true,
+        "object-literal-shorthand": false,
+        "object-literal-sort-keys": false,
+        "object-literal-key-quotes": false,
+        "trailing-comma": false,
+        "no-empty": false,
+        "quotemark": [true, "single"],
+        "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore", "allow-trailing-underscore", "allow-pascal-case", "allow-snake-case"]
+    },
+    "rulesDirectory": [],
+    "linterOptions": {
+        "exclude": [
+            "src/polyfills.ts"
+        ]
+    }
+}

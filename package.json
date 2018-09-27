@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "name": "what-to-do-api",
+  "version": "1.0.0",
+  "description": "Backend API for What To Do?",
+  "author": "Kostyantin Petrov",
+  "scripts": {
+    "build": "webpack --config ./webpack.config.js",
+    "start": "npm run build && node ./dist/server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "lodash": "^4.17.11",
+    "module-alias": "^2.1.0",
+    "moment": "^2.22.2",
+    "mongoose": "^5.2.14",
+    "rxjs": "^6.3.2",
+    "typescript-rest": "^1.7.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/cors": "^2.8.4",
+    "@types/express": "^4.16.0",
+    "@types/lodash": "^4.14.116",
+    "@types/mongoose": "^5.2.12",
+    "@types/webpack": "^4.4.11",
+    "ts-loader": "^5.1.0",
+    "ts-node": "^7.0.1",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.3",
+    "webpack": "^4.18.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "_moduleAliases": {
+    "@app": "./dist/app",
+    "@data": "./dist/data",
+    "@utils": "./dist/utils"
+  }
+}
